@@ -15,14 +15,14 @@ CREATE TABLE IF NOT EXISTS comments (
   FOREIGN KEY (article_id) REFERENCES articles(article_id)
 );
 
--- INSERT INTO articles (title, contents, username, nice, created_at)
--- VALUES ('firstPost', 'This is my first blog', 'saki', 2, NOW());
+INSERT INTO articles (title, contents, username, nice, created_at)
+VALUES ('firstPost', 'This is my first blog', 'saki', 2, NOW());
 
--- INSERT INTO articles (title, contents, username, nice)
--- VALUES ('2nd', 'Second blog post', 'saki', 4);
+INSERT INTO articles (title, contents, username, nice)
+VALUES ('2nd', 'Second blog post', 'saki', 4);
 
--- INSERT INTO comments (article_id, message, created_at)
--- VALUES (1, '1st comment yeah', NOW());
+INSERT INTO comments (article_id, message, created_at)
+VALUES (1, '1st comment yeah', NOW());
 
--- INSERT INTO comments (article_id, message)
--- VALUES (1, 'welcome');
+INSERT INTO comments (article_id, message)
+VALUES (1, 'welcome');

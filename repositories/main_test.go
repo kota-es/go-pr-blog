@@ -20,7 +20,7 @@ var (
 )
 
 func setupTestData() error {
-	cmd := exec.Command("mysql", "-h", "127.0.0.1", "-u", "docker", "sampledb", "--passwird=docker", "-e", "source ./testdata/setupDB.sql")
+	cmd := exec.Command("mysql", "-h", "127.0.0.1", "-u", "docker", "sampledb", "--password=docker", "-e", "source ./testdata/setupDB.sql")
 	err := cmd.Run()
 	if err != nil {
 		return err
@@ -62,7 +62,7 @@ func setup() error {
 }
 
 func teardown() {
-	cleanupDB()
+	// cleanupDB()
 	testDB.Close()
 }
 
