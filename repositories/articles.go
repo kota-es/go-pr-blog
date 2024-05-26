@@ -102,5 +102,9 @@ func UpdateNiceNum(db *sql.DB, articleID int) error {
 		return err
 	}
 
+	if err = tx.Commit(); err != nil {
+		return err
+	}
+
 	return nil
 }
