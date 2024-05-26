@@ -7,14 +7,14 @@ import (
 var (
 	Comment1 = Comment{
 		CommentID: 1,
-		AritcleID: 1,
+		ArticleID: 1,
 		Message:   "test comment1",
 		CreateAt:  time.Now(),
 	}
 
 	Comment2 = Comment{
 		CommentID: 2,
-		AritcleID: 1,
+		ArticleID: 1,
 		Message:   "test comment2",
 		CreateAt:  time.Now(),
 	}

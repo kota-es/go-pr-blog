@@ -6,7 +6,7 @@ import (
 
 type Comment struct {
 	CommentID int       `json:"comment_id"`
-	AritcleID int       `json:"article_id"`
+	ArticleID int       `json:"article_id"`
 	Message   string    `json:"message"`
 	CreateAt  time.Time `json:"created_at"`
 }
