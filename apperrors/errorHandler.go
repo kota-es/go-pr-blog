@@ -3,13 +3,11 @@ package apperrors
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 	"net/http"
 )
 
 func ErrorHandler(w http.ResponseWriter, req *http.Request, err error) {
 	var appErr *MyAppError
-	fmt.Println(err)
 	if !errors.As(err, &appErr) {
 		appErr = &MyAppError{
 			ErrCode: Unknown,
