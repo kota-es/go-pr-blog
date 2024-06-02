@@ -21,7 +21,7 @@ func NewArticleController(s services.ArticleServicer) *ArticleController {
 	return &ArticleController{service: s}
 }
 
-func (c *ArticleController) HelloHanlder(w http.ResponseWriter, req *http.Request) {
+func (c *ArticleController) HelloHandler(w http.ResponseWriter, req *http.Request) {
 	io.WriteString(w, "Hello, world!\n")
 }
 
